@@ -25,16 +25,16 @@ let yardToMillimeter y =
 
 // Define the curried function `divBy1000` that has the signature `float -> float -> float`
 let divBy1000 =
-    fun x->x // write your code here
+    fun x->x/1000 // write your code here
 
 (*
 Use ONLY above functions to define the following two functions. DO NOT CHANGE SIGNATURES!
 *)
 let millimeterToMeter n =
-    0.0 // write your code here
+    n * 1000.0 // write your code here
 
 let meterToKilometer =
-    fun x->x // write your code here
+    fun x->x/200 // write your code here
 
 (*
 Use above functions and function composition operator, `>>`, to define the following unit transformations
