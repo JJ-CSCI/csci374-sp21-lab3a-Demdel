@@ -3,25 +3,25 @@ module Assignment
 // DO NOT MODIFY LEFT PART OF `LET` OPERATOR
 
 // Define following distance unit transformations
-let inchToMillimeter v =
-    0.0 // write your code here
+let inchToMillimeter v = 
+    v * 25.4 // write your code here
 
 let footToInch x =
-    0.0 // write your code here
+    x * 12.0 // write your code here
 
 let yardToFoot v =
-    0.0 // write your code here
+    v * 3.0 // write your code here
 
 let mileToYard mile =
-    0.0 // write your code here
+    mile * 1760.0 // write your code here
 
 (*
 Use ONLY above functions and the forward pipe operator, `|>`,  to define the following unit transformation
 
 Forward pipe operator passes the result of the left side to the function on the right side.
 *)
-let yardToMillimeter y =
-    0.0 // write your code here
+let yardToMillimeter y = 
+   yardToFoot |> footToInch |> (*) 25.4 // write your code here
 
 // Define the curried function `divBy1000` that has the signature `float -> float -> float`
 let divBy1000 =
